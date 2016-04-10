@@ -1,0 +1,36 @@
+<ion-view view-title="Login" >
+    <ion-content style="background: url(img/login.jpg) center; background-size: cover;">
+        <div class="hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+                <h1>Resturant app</h1>
+            </div>
+        </div>
+        <div class="padding">
+            <label ng-show="errorMessage" class="alert alert-danger item">
+                {{errorMessage}}
+            </label>
+        </div>
+        <form >
+            <div class="row">
+                <div class="col col-10">&nbsp;</div>
+                <div class="col col-80">
+                    <div class="padding">
+                        <button ng-click="facebookLogin()" class="button button-full button-assertive ink">Login with facebook</button>
+                    </div>
+                     <div class="padding">
+                        <button  ng-click="googleLogin()" class="button button-full button-assertive ink">Login with gmail</button>
+                    </div>
+                </div>
+                <div class="col col-10">&nbsp;</div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col col-20">&nbsp;</div>
+            <div class="col col-20" style="background:#ffffff;"><img class="col" ng-src="img/collective.png"></div>
+            <div class="col col-20" style="background:#ffffff;"><img class="col" ng-src="img/lansa.png"></div>
+            <div class="col col-20" style="background:#ffffff;"><img class="col" ng-src="img/curiouslabx.png"></div>
+            <div class="col col-20">&nbsp;</div>
+        </div>
+    </ion-content>
+</ion-view>

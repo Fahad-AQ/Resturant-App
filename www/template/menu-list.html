@@ -1,0 +1,24 @@
+<ion-view view-title="Menu-list">
+    <ion-content>
+            <div class="row">
+                <h1 class="res-list-header">Resturant Name : {{resturantName}}</h1>
+            </div>
+              <div class="row">
+                <h1 class="res-list-header">&nbsp;</h1>
+            </div>
+               <div class="row">
+                <h1 class="res-list-header">Menu List</h1>
+            </div>
+        <div class="list" ng-repeat="resturants in resturantMenuArray" ng-show="resturants.name == resturantName" >
+                    <div class="item item-button-right" ng-repeat="resturantsMenu in resturants.menu" >
+                    <p ng-hide="resturantsMenu.name == resturantName ||resturantsMenu == resturantName" >Item Name :  {{resturantsMenu.name}} <br /> Item Price :  {{resturantsMenu.price}} </p>  
+                        <button class="button button-positive" ng-click="addtoCard(resturantsMenu)">
+                          Add
+                        </button>
+                    </div>
+              </div>
+            <div class="row">
+                <div class="col"><button  ng-click="OrderPlacementState()"class="button button-success button-block">Check-out to Order</button></div>
+            </div>
+    </ion-content>
+</ion-view>

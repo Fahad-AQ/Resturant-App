@@ -1,0 +1,17 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="has-header">     
+         <h1 class="res-list-header">Welcome : {{userName.facebook.displayName}}</h1>
+        <h2 class="res-list-header">Resturant List</h2>
+          
+    <div class="list" ng-repeat="resturant in resturantlist" ng-click="menulist(resturant.name)">
+   <a class="item item-thumbnail-left" href="#">
+      <img src="img/logo.png">
+      <h2>Resturant :&nbsp; {{resturant.name}}</h2>
+      <p>Star :&nbsp;{{resturant.star}}</p>
+      <p>Address :&nbsp;{{resturant.address}}</p>
+    </a>
+</div>
+
+  
+  </ion-content>
+</ion-view>

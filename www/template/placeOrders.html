@@ -1,0 +1,39 @@
+<ion-view view-title="Menu-list">
+    <ion-content>
+               <div class="row">
+                <h1 class="res-list-header">Order Placement</h1>
+            </div>
+            
+          <form ng-submit="OrderPlacement(ordersOwer)" style=" ;border: 1px solid gainsboro;width: 95%;margin: 0 auto">
+            <div class="list padding">
+                <label class="item item-input-wrapper ">
+                    <span class="item-input-label span_Size">First Name </span>&nbsp;
+                    <input class="item-input-wrapper" required="" ng-model="ordersOwer.firstName"  type="text" >
+      
+                </label>
+                <br>
+                <label class="item item-input-wrapper ">
+                    <span class="item-input-label span_Size">Last Name</span>&nbsp;
+                    <input class="item-input-wrapper" required="" ng-model="ordersOwer.lastName"  type="text" >
+                 
+                </label>
+                <br>
+                <label class="item item-input-wrapper ">
+                    <span class="item-input-label span_Size">City </span>&nbsp;
+                    <input class="item-input-wrapper" required="" ng-model="ordersOwer.City"  type="text" >
+                  
+                </label>
+                <br>
+                <label class="item item-input-wrapper ">
+                    <span class="item-input-label span_Size">Mobile Number  </span>&nbsp;
+                    <input class="item-input-wrapper" required="" ng-model="ordersOwer.number"  type="number" >
+                  
+                </label>
+                <div class="">
+                    <button type="submit" class="button button-block button-balanced">Orders Placement</button>
+                </div>
+            </div>
+        </form>
+  
+    </ion-content>
+</ion-view>
